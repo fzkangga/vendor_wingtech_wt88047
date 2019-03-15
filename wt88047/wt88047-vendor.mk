@@ -285,7 +285,13 @@ PRODUCT_COPY_FILES += \
 	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so \
 	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
 	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
-	vendor/wingtech/wt88047/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/vendor/radio/qcril_database/qcril.db 
+	vendor/wingtech/wt88047/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/vendor/radio/qcril_database/qcril.db \
+	vendor/wingtech/wt88047/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
+	vendor/wt88047/proprietary/lib/librtp_jni.so:system/lib/librtp_jni.so \
+	vendor/wt88047/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so
 
 
 PRODUCT_PACKAGES += \
@@ -302,4 +308,5 @@ PRODUCT_PACKAGES += \
     qcrilhook \
     QtiTelephonyService \
     qti-telephony-common \
-    QtiTelephonyServicelibrary
+    QtiTelephonyServicelibrary \
+	qti-vzw-ims-internal
