@@ -260,7 +260,33 @@ PRODUCT_COPY_FILES += \
     vendor/wingtech/wt88047/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/wingtech/wt88047/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/wingtech/wt88047/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
-    vendor/wingtech/wt88047/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so
+    vendor/wingtech/wt88047/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+	vendor/wingtech/wt88047/proprietary/vendor/bin/qmi_motext_hook:$(TARGET_COPY_OUT_VENDOR)/vendor/bin/qmi_motext_hook \
+	vendor/wingtech/wt88047/proprietary/vendor/etc/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/data/qmi_config.xml \
+	vendor/wingtech/wt88047/proprietary/vendor/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/permissions/privapp-permissions-com.qualcomm.qcrilmsgtunnel.xml \
+	vendor/wingtech/wt88047/proprietary/vendor/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_VENDOR)/vendor/etc/permissions/qti_libpermissions.xml \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/com.quicinc.cne.constants@2.0.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/com.quicinc.cne.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/com.quicinc.cne.server@1.0.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libSubSystemShutdown.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libSubSystemShutdown.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libadropbox.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libadropbox.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libdiag_system.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libdiag_system.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libmdmcutback.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libmdmcutback.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libmotext_inf.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libmotext_inf.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libqcmaputils.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libqmimotext.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libqmimotext.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libril-qc-ltedirectdisc.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/librilqmiservices.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libsettings.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/libsubsystem_control.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+	vendor/wingtech/wt88047/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/vendor/radio/qcril_database/qcril.db 
+
 
 PRODUCT_PACKAGES += \
     ims \
@@ -273,4 +299,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     qcrilmsgtunnel \
     qcnvitems \
-    qcrilhook
+    qcrilhook \
+    QtiTelephonyService \
+    qti-telephony-common \
+    QtiTelephonyServicelibrary
