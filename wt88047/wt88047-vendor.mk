@@ -315,7 +315,6 @@ PRODUCT_COPY_FILES += \
     vendor/wingtech/wt88047/proprietary/vendor/etc/permissions/qti-vzw-ims-internal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/wingtech/wt88047/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/wingtech/wt88047/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
-    vendor/wingtech/wt88047/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/wingtech/wt88047/proprietary/vendor/bin/imscmservice:$(TARGET_COPY_OUT_VENDOR)/bin/imscmservice \
     vendor/wingtech/wt88047/proprietary/vendor/framework/imscmd.jar:$(TARGET_COPY_OUT_VENDOR)/framework/imscmd.jar \
     vendor/wingtech/wt88047/proprietary/vendor/framework/rcsimssettings.jar:$(TARGET_COPY_OUT_VENDOR)/framework/rcsimssettings.jar \
